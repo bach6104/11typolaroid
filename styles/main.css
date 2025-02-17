@@ -1,0 +1,163 @@
+:root {
+    --font-primary: "Montserrat", sans-serif;
+    --heading-color: #333;
+    --body-color: #555;
+  
+    --font-size-h1: 2rem;   /* Adjust as needed (e.g. 2.5rem, 3rem) */
+    --font-size-h2: 1.5rem; /* Adjust as needed */
+    --font-size-body: 1rem; /* 16px */
+  
+    --font-weight-bold: 700;
+    --font-weight-normal: 400;
+  }
+  
+  /* RESET / BASE */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--font-primary);
+    color: var(--body-color);
+    line-height: 1.5;
+  }
+  
+  /* HEADINGS */
+  h1, h2, h3 {
+    color: var(--heading-color);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 0.5rem;
+  }
+  
+  h1 {
+    font-size: var(--font-size-h1);
+  }
+  h2 {
+    font-size: var(--font-size-h2);
+  }
+  
+  /* BODY TEXT */
+  p, li {
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-normal);
+    margin-bottom: 1rem; /* spacing after paragraphs/list items */
+  }
+  
+
+  .hero {
+    position: relative; /* needed for absolute positioning of .site-title */
+    background: #f2f2f2;
+    text-align: center; /* centers the .hero-content */
+    padding: 3rem 1rem;
+  }
+  
+  /* Polaroid Cloud pinned to the left */
+  .site-title {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  /* Center container for "FILM TO PHONE" and camera */
+  .hero-content {
+    max-width: 600px;
+    margin: 0 auto;      /* centers within the hero */
+  }
+  
+  /* Make "FILM TO PHONE" large */
+  .hero-content h1 {
+    font-size: 3rem;     /* adjust as needed */
+    margin-bottom: 1rem;
+  }
+  
+  /* Camera image centered below heading */
+  .hero-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  
+  /* Headings within the .hero (e.g. "Any cloud, anytime.") */
+  .hero h2 {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
+  
+  /* Paragraph styling in the hero */
+  .hero p {
+    max-width: 600px;
+    margin: 0.75rem auto;
+    line-height: 1.5;
+  }
+  
+  /* Signup form in the hero */
+  .hero form {
+    margin-top: 1rem;
+  }
+  .hero input[type="email"] {
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 220px;
+    margin-right: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .hero button {
+    padding: 0.5rem 1rem;
+    background: #e60023; /* Polaroid-like red */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* --------------------------------
+     INTRO, FEATURES, SIGNUP SECTIONS
+  -------------------------------- */
+  .intro h2,
+  .features h2,
+  .signup h2 {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .intro p,
+  .features p,
+  .signup p {
+    text-align: center;
+    max-width: 600px;
+    margin: 0.75rem auto;
+  }
+  
+  /* Feature list styling */
+  .features-list {
+    list-style: none;
+    padding: 0;
+    margin: 1rem auto;
+    display: inline-block;  /* center the UL as a block */
+    text-align: left;       /* left-align bullet text */
+  }
+  .features-list li {
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    background: url("data:image/svg+xml,%3Csvg width='16' height='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23000000' d='M6 11.17l-2.83-2.83-1.42 1.42L6 14 14.25 5.75l-1.42-1.42z'/%3E%3C/svg%3E") no-repeat 0 50%;
+    background-size: 16px 16px; /* small check icon for bullets */
+  }
+  
+  /* "KEEP IN TOUCH" button (if used outside .hero too) */
+  form button {
+    background: #e60023;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
